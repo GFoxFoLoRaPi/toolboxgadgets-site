@@ -1,0 +1,144 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Toolbox Gadgets — Learn, Equip, Build the Future with Style</title>
+  <style>
+    :root {
+      --bg: #fffaf2;
+      --card: #ffffff;
+      --ink: #181a24;
+      --muted: #52586b;
+      --teal: #00bfa6;
+      --pink: #ff2a85;
+      --amber: #ffb703;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, sans-serif;
+      background-color: var(--bg);
+      background-image: radial-gradient(#00bfa626 1.5px, transparent 1.5px), radial-gradient(#ff2a8522 1.5px, #fffaf2 1.5px);
+      background-size: 36px 36px;
+      background-position: 0 0, 18px 18px;
+      color: var(--ink);
+      line-height: 1.6;
+    }
+    .wrap { max-width: 1020px; margin: 0 auto; padding: 24px 20px 64px; }
+    nav {
+      display: flex; justify-content: space-between; align-items: center;
+      background: var(--card); border: 3px solid var(--ink); border-radius: 14px;
+      padding: 14px 22px; box-shadow: 6px 6px 0 var(--teal); margin-bottom: 36px;
+    }
+    .logo { font-weight: 900; font-size: 18px; letter-spacing: 0.04em; text-transform: uppercase; }
+    .logo span { color: var(--pink); }
+    .nav-pill {
+      background: var(--amber); border: 2px solid var(--ink); border-radius: 999px;
+      padding: 5px 14px; font-weight: 800; font-size: 12px; text-transform: uppercase;
+    }
+    .hero {
+      background: var(--card); border: 3px solid var(--ink); border-radius: 18px;
+      padding: 38px 32px; box-shadow: 8px 8px 0 var(--pink); margin-bottom: 44px;
+    }
+    .badge {
+      display: inline-block; background: var(--teal); color: var(--ink); font-weight: 800;
+      font-size: 12px; text-transform: uppercase; letter-spacing: 0.08em;
+      padding: 4px 12px; border: 2px solid var(--ink); border-radius: 999px; margin-bottom: 14px;
+    }
+    h1 { font-size: clamp(30px, 5vw, 46px); line-height: 1.12; margin: 0 0 14px; font-weight: 900; }
+    .lead { max-width: 680px; color: var(--muted); font-size: 17px; margin: 0; }
+    .section-head { display: flex; align-items: center; gap: 12px; margin-bottom: 8px; }
+    h2 { font-size: 26px; font-weight: 900; margin: 0; }
+    .sub { color: var(--muted); margin: 0 0 24px; font-size: 15px; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; margin-bottom: 44px; }
+    .card {
+      background: var(--card); border: 3px solid var(--ink); border-radius: 16px;
+      padding: 26px; box-shadow: 7px 7px 0 var(--amber); display: flex; flex-direction: column; justify-content: space-between;
+    }
+    .stock {
+      display: inline-block; background: #e6fbf8; color: #007a6a; border: 2px solid var(--ink);
+      font-weight: 800; font-size: 12px; padding: 3px 10px; border-radius: 999px; margin-bottom: 12px;
+    }
+    .stock.one { background: #ffe8f2; color: #b80054; }
+    .card h3 { margin: 0 0 10px; font-size: 21px; font-weight: 900; }
+    .card p { color: var(--muted); font-size: 14.5px; margin: 0 0 16px; }
+    .specs { padding-left: 18px; margin: 0 0 20px; font-size: 14px; color: var(--ink); }
+    .specs li { margin-bottom: 6px; }
+    .btn {
+      display: block; text-align: center; background: var(--pink); color: #ffffff;
+      font-weight: 900; font-size: 15px; text-transform: uppercase; letter-spacing: 0.05em;
+      padding: 13px 18px; border: 3px solid var(--ink); border-radius: 10px;
+      text-decoration: none; box-shadow: 4px 4px 0 var(--ink); transition: transform 0.1s ease;
+    }
+    .btn:hover { transform: translate(-2px, -2px); box-shadow: 6px 6px 0 var(--ink); }
+    .btn.teal { background: var(--teal); color: var(--ink); }
+    .notice {
+      background: var(--card); border: 3px solid var(--ink); border-radius: 14px;
+      padding: 20px 24px; box-shadow: 6px 6px 0 var(--ink); margin-bottom: 44px; font-size: 14px;
+    }
+    footer {
+      border-top: 2px dashed #181a2433; padding-top: 22px; color: var(--muted);
+      font-size: 13px; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <nav>
+      <div class="logo">Toolbox <span>Gadgets</span></div>
+      <div class="nav-pill">Bench Drops · Live</div>
+    </nav>
+
+    <section class="hero">
+      <span class="badge">Learn · Equip · Build the Future with Style</span>
+      <h1>Custom LoRa Mesh Hardware &amp; Desktop-Manufactured Gear.</h1>
+      <p class="lead">Small-batch radio nodes, custom-modded handheld mesh terminals, and precision 3D-printed enclosures built, flashed, and RF-tested right on our Maryland workbench.</p>
+    </section>
+
+    <div class="section-head">
+      <h2>Bench Drops — Ready to Ship</h2>
+    </div>
+    <p class="sub">Direct checkout via Stripe with USPS Ground Advantage shipping. Limited bench quantities—once a drop sells out, checkout closes automatically.</p>
+
+    <div class="grid">
+      <article class="card">
+        <div>
+          <span class="stock">Bench Drop #01 · 4 Units Built</span>
+          <h3>Custom 3D-Printed MeshCore 915 MHz LoRa Node</h3>
+          <p>Compact, rugged custom-printed enclosure housing a bench-tested 915 MHz LoRa transceiver pre-flashed with MeshCore firmware and paired with an external whip antenna.</p>
+          <ul class="specs">
+            <li>Pre-flashed with MeshCore &amp; bench RF-tested</li>
+            <li>Custom 3D-printed housing + external 915 MHz SMA whip</li>
+            <li>USPS Ground Advantage shipping included at checkout</li>
+          </ul>
+        </div>
+        <a class="btn teal" href="https://stripe.com" target="_blank" rel="noopener">Buy MeshCore Node via Stripe →</a>
+      </article>
+
+      <article class="card">
+        <div>
+          <span class="stock one">One-of-a-Kind Bench Mod · 1 Unit</span>
+          <h3>Modded LilyGO T-Deck Plus (External Whip + WADAMesh OS)</h3>
+          <p>Upgraded with a precision internal SMA pigtail + high-gain external whip antenna and flashed with WADAMesh OS for crisp, responsive standalone touchscreen control.</p>
+          <ul class="specs">
+            <li>External SMA whip antenna mod via internal pigtail</li>
+            <li>Flashed with WADAMesh OS for full touchscreen usability</li>
+            <li>Bench-tested &amp; ships via USPS Ground Advantage</li>
+          </ul>
+        </div>
+        <a class="btn" href="https://stripe.com" target="_blank" rel="noopener">Buy Modded T-Deck Plus via Stripe →</a>
+      </article>
+    </div>
+
+    <div class="notice">
+      <strong>Hardware &amp; RF Safety Note:</strong> Never power on a LoRa transceiver without the included SMA whip antenna firmly attached. Units ship as experimental 915 MHz ISM open-source MeshCore / WADAMesh hardware kits.
+    </div>
+
+    <footer>
+      <span>© 2026 Toolbox Gadgets · Maryland, USA</span>
+      <span>Interactive 3D Retro-90s Garage Showcase Powered by Fox &amp; Flame Foundry — Coming Soon</span>
+    </footer>
+  </div>
+</body>
+</html>
