@@ -52,6 +52,26 @@
   </style>
 </head>
 <body>
+<svg style="position:fixed;inset:0;width:100%;height:100%;z-index:-1;pointer-events:none;filter:drop-shadow(3px 3px 0 rgba(24,26,36,0.22));" xmlns="http://w3.org">
+  <defs>
+    <pattern id="memphis90s" width="260" height="260" patternUnits="userSpaceOnUse">
+      <!-- Zig-Zag -->
+      <polyline points="18,38 32,22 46,38 60,22 74,38" fill="none" stroke="#ff2a85" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+      <!-- Squiggly Wave -->
+      <path d="M 155 45 Q 170 25, 185 45 T 215 45 T 245 45" fill="none" stroke="#00bfa6" stroke-width="4" stroke-linecap="round" />
+      <!-- Spiral -->
+      <path d="M 65 165 c 0,-8 12,-8 12,0 c 0,14 -20,14 -20,0 c 0,-20 28,-20 28,0 c 0,26 -36,26 -36,0" fill="none" stroke="#8b5cf6" stroke-width="3.5" stroke-linecap="round" />
+      <!-- Amber Triangle & Teal Circle -->
+      <polygon points="195,140 218,125 224,154" fill="#ffb703" stroke="#181a24" stroke-width="2.5" />
+      <circle cx="135" cy="105" r="9" fill="#00bfa6" stroke="#181a24" stroke-width="2.5" />
+      <!-- Second Zig-Zag & Squiggle -->
+      <polyline points="145,215 158,200 171,215 184,200 197,215" fill="none" stroke="#ffb703" stroke-width="4" stroke-linecap="round" />
+      <path d="M 20 225 Q 35 208, 50 225 T 80 225" fill="none" stroke="#ff2a85" stroke-width="4" stroke-linecap="round" />
+    </pattern>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#memphis90s)" />
+</svg>
+
   <div class="wrap">
     <nav>
       <div class="logo">Toolbox <span>Gadgets</span></div>
@@ -63,7 +83,7 @@
         <!-- Retro 90s Sky & Memphis Shapes -->
         <rect x="0" y="0" width="860" height="295" rx="14" fill="#e0fbf6" stroke="#181a24" stroke-width="3" />
         <polygon points="45,45 75,20 90,60" fill="#ff2a85" stroke="#181a24" stroke-width="2.5" />
-        <circle cx="805" cy="52" r="22" fill="#ffb703" stroke="#181a24" stroke-width="2.5" />
+        <circle cx="805" cy="52" r="22" fill="#ffb703" stroke="#181a24" stroke-width="2.5" /><polyline points="22,125 36,110 50,125 64,110 78,125" fill="none" stroke="#8b5cf6" stroke-width="4" stroke-linecap="round" /><path d="M 785 118 c 0,-7 10,-7 10,0 c 0,12 -17,12 -17,0 c 0,-17 24,-17 24,0" fill="none" stroke="#ff2a85" stroke-width="3.5" stroke-linecap="round" /><path d="M 28 210 Q 42 195, 56 210 T 84 210" fill="none" stroke="#00bfa6" stroke-width="4" stroke-linecap="round" />
         <!-- Garage Building Facade -->
         <rect x="130" y="38" width="600" height="257" rx="10" fill="#ffffff" stroke="#181a24" stroke-width="3.5" />
         <rect x="130" y="38" width="600" height="24" rx="6" fill="#00bfa6" stroke="#181a24" stroke-width="3" />
@@ -143,3 +163,4 @@
   </div>
 </body>
 </html>
+
