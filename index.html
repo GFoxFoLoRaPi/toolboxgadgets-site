@@ -3,83 +3,51 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Toolbox Gadgets — Learn, Equip, Build the Future with Style</title>
+  <title>Toolbox Gadgets — Under Construction | Garage Doors Opening Soon</title>
   <style>
-    :root {
-      --bg: #fffaf2;
-      --card: #ffffff;
-      --ink: #181a24;
-      --muted: #52586b;
-      --teal: #00bfa6;
-      --pink: #ff2a85;
-      --amber: #ffb703;
-    }
+    :root { --bg: #fffaf2; --card: #ffffff; --ink: #181a24; --muted: #52586b; --teal: #00bfa6; --pink: #ff2a85; --amber: #ffb703; }
     * { box-sizing: border-box; }
     body {
-      margin: 0;
-      font-family: system-ui, -apple-system, sans-serif;
+      margin: 0; font-family: system-ui, -apple-system, sans-serif; color: var(--ink); line-height: 1.6;
       background-color: var(--bg);
-      background-image: radial-gradient(#00bfa626 1.5px, transparent 1.5px), radial-gradient(#ff2a8522 1.5px, #fffaf2 1.5px);
-      background-size: 36px 36px;
-      background-position: 0 0, 18px 18px;
-      color: var(--ink);
-      line-height: 1.6;
+      background-image: radial-gradient(#00bfa630 2px, transparent 2px), radial-gradient(#ff2a8526 2px, #fffaf2 2px);
+      background-size: 36px 36px; background-position: 0 0, 18px 18px;
     }
-    .wrap { max-width: 1020px; margin: 0 auto; padding: 24px 20px 64px; }
+    .wrap { max-width: 980px; margin: 0 auto; padding: 24px 20px 64px; }
     nav {
-      display: flex; justify-content: space-between; align-items: center;
+      display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px;
       background: var(--card); border: 3px solid var(--ink); border-radius: 14px;
-      padding: 14px 22px; box-shadow: 6px 6px 0 var(--teal); margin-bottom: 36px;
+      padding: 14px 22px; box-shadow: 6px 6px 0 var(--teal); margin-bottom: 28px;
     }
-    .logo { font-weight: 900; font-size: 18px; letter-spacing: 0.04em; text-transform: uppercase; }
+    .logo { font-weight: 900; font-size: 19px; letter-spacing: 0.04em; text-transform: uppercase; }
     .logo span { color: var(--pink); }
-    .nav-pill {
+    .status-pill {
       background: var(--amber); border: 2px solid var(--ink); border-radius: 999px;
-      padding: 5px 14px; font-weight: 800; font-size: 12px; text-transform: uppercase;
+      padding: 5px 14px; font-weight: 900; font-size: 12px; text-transform: uppercase;
     }
-    .hero {
+    .garage-stage {
       background: var(--card); border: 3px solid var(--ink); border-radius: 18px;
-      padding: 38px 32px; box-shadow: 8px 8px 0 var(--pink); margin-bottom: 44px;
+      padding: 20px; box-shadow: 8px 8px 0 var(--pink); margin-bottom: 34px; text-align: center;
     }
-    .badge {
-      display: inline-block; background: var(--teal); color: var(--ink); font-weight: 800;
-      font-size: 12px; text-transform: uppercase; letter-spacing: 0.08em;
-      padding: 4px 12px; border: 2px solid var(--ink); border-radius: 999px; margin-bottom: 14px;
-    }
-    h1 { font-size: clamp(30px, 5vw, 46px); line-height: 1.12; margin: 0 0 14px; font-weight: 900; }
-    .lead { max-width: 680px; color: var(--muted); font-size: 17px; margin: 0; }
-    .section-head { display: flex; align-items: center; gap: 12px; margin-bottom: 8px; }
-    h2 { font-size: 26px; font-weight: 900; margin: 0; }
-    .sub { color: var(--muted); margin: 0 0 24px; font-size: 15px; }
-    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; margin-bottom: 44px; }
+    svg.garage-svg { width: 100%; max-width: 880px; height: auto; display: block; margin: 0 auto; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin-bottom: 30px; }
     .card {
       background: var(--card); border: 3px solid var(--ink); border-radius: 16px;
-      padding: 26px; box-shadow: 7px 7px 0 var(--amber); display: flex; flex-direction: column; justify-content: space-between;
+      padding: 22px; box-shadow: 6px 6px 0 var(--amber);
     }
-    .stock {
-      display: inline-block; background: #e6fbf8; color: #007a6a; border: 2px solid var(--ink);
-      font-weight: 800; font-size: 12px; padding: 3px 10px; border-radius: 999px; margin-bottom: 12px;
+    .card h2 { margin: 0 0 8px; font-size: 20px; font-weight: 900; }
+    .card p, .card li { color: var(--muted); font-size: 14.5px; }
+    .socials, .bom { display: flex; flex-wrap: wrap; gap: 9px; margin-top: 12px; }
+    .pill-btn {
+      display: inline-block; background: var(--teal); color: var(--ink); font-weight: 800;
+      font-size: 13px; padding: 7px 13px; border: 2px solid var(--ink); border-radius: 9px;
+      text-decoration: none; box-shadow: 3px 3px 0 var(--ink);
     }
-    .stock.one { background: #ffe8f2; color: #b80054; }
-    .card h3 { margin: 0 0 10px; font-size: 21px; font-weight: 900; }
-    .card p { color: var(--muted); font-size: 14.5px; margin: 0 0 16px; }
-    .specs { padding-left: 18px; margin: 0 0 20px; font-size: 14px; color: var(--ink); }
-    .specs li { margin-bottom: 6px; }
-    .btn {
-      display: block; text-align: center; background: var(--pink); color: #ffffff;
-      font-weight: 900; font-size: 15px; text-transform: uppercase; letter-spacing: 0.05em;
-      padding: 13px 18px; border: 3px solid var(--ink); border-radius: 10px;
-      text-decoration: none; box-shadow: 4px 4px 0 var(--ink); transition: transform 0.1s ease;
-    }
-    .btn:hover { transform: translate(-2px, -2px); box-shadow: 6px 6px 0 var(--ink); }
-    .btn.teal { background: var(--teal); color: var(--ink); }
-    .notice {
-      background: var(--card); border: 3px solid var(--ink); border-radius: 14px;
-      padding: 20px 24px; box-shadow: 6px 6px 0 var(--ink); margin-bottom: 44px; font-size: 14px;
-    }
+    .pill-btn.pink { background: var(--pink); color: #fff; }
+    .pill-btn.amber { background: var(--amber); }
     footer {
-      border-top: 2px dashed #181a2433; padding-top: 22px; color: var(--muted);
-      font-size: 13px; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px;
+      border-top: 2px dashed #181a2433; padding-top: 18px; color: var(--muted);
+      font-size: 12.5px; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 10px;
     }
   </style>
 </head>
@@ -87,57 +55,90 @@
   <div class="wrap">
     <nav>
       <div class="logo">Toolbox <span>Gadgets</span></div>
-      <div class="nav-pill">Bench Drops · Live</div>
+      <div class="status-pill">🚧 Under Construction · Garage Closed</div>
     </nav>
 
-    <section class="hero">
-      <span class="badge">Learn · Equip · Build the Future with Style</span>
-      <h1>Custom LoRa Mesh Hardware &amp; Desktop-Manufactured Gear.</h1>
-      <p class="lead">Small-batch radio nodes, custom-modded handheld mesh terminals, and precision 3D-printed enclosures built, flashed, and RF-tested right on our Maryland workbench.</p>
+    <section class="garage-stage">
+      <svg class="garage-svg" viewBox="0 0 860 330" xmlns="http://w3.org">
+        <!-- Retro 90s Sky & Memphis Shapes -->
+        <rect x="0" y="0" width="860" height="295" rx="14" fill="#e0fbf6" stroke="#181a24" stroke-width="3" />
+        <polygon points="45,45 75,20 90,60" fill="#ff2a85" stroke="#181a24" stroke-width="2.5" />
+        <circle cx="805" cy="52" r="22" fill="#ffb703" stroke="#181a24" stroke-width="2.5" />
+        <!-- Garage Building Facade -->
+        <rect x="130" y="38" width="600" height="257" rx="10" fill="#ffffff" stroke="#181a24" stroke-width="3.5" />
+        <rect x="130" y="38" width="600" height="24" rx="6" fill="#00bfa6" stroke="#181a24" stroke-width="3" />
+        <!-- Closed Roll-Up Garage Door Slats -->
+        <rect x="175" y="82" width="510" height="213" fill="#f1f5f9" stroke="#181a24" stroke-width="3.5" />
+        <line x1="175" y1="112" x2="685" y2="112" stroke="#181a24" stroke-width="2.5" />
+        <line x1="175" y1="142" x2="685" y2="142" stroke="#181a24" stroke-width="2.5" />
+        <line x1="175" y1="172" x2="685" y2="172" stroke="#181a24" stroke-width="2.5" />
+        <line x1="175" y1="202" x2="685" y2="202" stroke="#181a24" stroke-width="2.5" />
+        <line x1="175" y1="232" x2="685" y2="232" stroke="#181a24" stroke-width="2.5" />
+        <line x1="175" y1="262" x2="685" y2="262" stroke="#181a24" stroke-width="2.5" />
+        <!-- Foreground Under Construction Banner -->
+        <rect x="215" y="138" width="430" height="84" rx="10" fill="#ffb703" stroke="#181a24" stroke-width="3.5" />
+        <text x="430" y="173" text-anchor="middle" fill="#181a24" font-size="22" font-weight="900">UNDER CONSTRUCTION</text>
+        <text x="430" y="201" text-anchor="middle" fill="#181a24" font-size="13.5" font-weight="800">ROLLING UP THE 3D GARAGE DOORS SOON · STAY TUNED!</text>
+        <!-- Leaning Pink Hoverboard Easter Egg -->
+        <rect x="752" y="185" width="22" height="108" rx="11" transform="rotate(-14 752 185)" fill="#ff2a85" stroke="#181a24" stroke-width="3" />
+        <!-- Driveway Ground -->
+        <rect x="0" y="295" width="860" height="35" rx="8" fill="#181a24" />
+      </svg>
     </section>
-
-    <div class="section-head">
-      <h2>Bench Drops — Ready to Ship</h2>
-    </div>
-    <p class="sub">Direct checkout via Stripe with USPS Ground Advantage shipping. Limited bench quantities—once a drop sells out, checkout closes automatically.</p>
-
     <div class="grid">
-      <article class="card">
-        <div>
-          <span class="stock">Bench Drop #01 · 4 Units Built</span>
-          <h3>Custom 3D-Printed MeshCore 915 MHz LoRa Node</h3>
-          <p>Compact, rugged custom-printed enclosure housing a bench-tested 915 MHz LoRa transceiver pre-flashed with MeshCore firmware and paired with an external whip antenna.</p>
-          <ul class="specs">
-            <li>Pre-flashed with MeshCore &amp; bench RF-tested</li>
-            <li>Custom 3D-printed housing + external 915 MHz SMA whip</li>
-            <li>USPS Ground Advantage shipping included at checkout</li>
-          </ul>
+      <div class="card">
+        <h2>Learn · Equip · Build the Future with Style</h2>
+        <p>We are currently wrenching behind closed doors—building custom <strong>915 MHz MeshCore &amp; WADAMesh LoRa radios</strong>, 3D-printed hardware enclosures, and an upcoming <strong>Interactive 3D Retro-90s Garage</strong> experience.</p>
+        <ul style="padding-left:18px;margin:10px 0 0;">
+          <li>Small-batch off-grid LoRa nodes &amp; T-Deck SMA antenna mods</li>
+          <li>Desktop-manufactured Gridfinity &amp; electronics enclosures</li>
+          <li>Live workbench &amp; 3D-printing streams launching soon</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h2>Follow the Build Across Our Channels</h2>
+        <p>Catch behind-the-scenes 3D printing, LoRa range tests, and live bench drops as we finish setting up the shop:</p>
+        <div class="socials">
+          <a class="pill-btn pink" href="https://youtube.com" target="_blank" rel="noopener">YouTube ↗</a>
+          <a class="pill-btn" href="https://twitch.tv" target="_blank" rel="noopener">Twitch ↗</a>
+          <a class="pill-btn" href="https://kick.com" target="_blank" rel="noopener">Kick ↗</a>
+          <a class="pill-btn" href="https://rumble.com" target="_blank" rel="noopener">Rumble ↗</a>
+          <a class="pill-btn amber" href="https://x.com" target="_blank" rel="noopener">X / Twitter ↗</a>
+          <a class="pill-btn" href="https://facebook.com" target="_blank" rel="noopener">Facebook ↗</a>
         </div>
-        <a class="btn teal" href="https://stripe.com" target="_blank" rel="noopener">Buy MeshCore Node via Stripe →</a>
-      </article>
-
-      <article class="card">
-        <div>
-          <span class="stock one">One-of-a-Kind Bench Mod · 1 Unit</span>
-          <h3>Modded LilyGO T-Deck Plus (External Whip + WADAMesh OS)</h3>
-          <p>Upgraded with a precision internal SMA pigtail + high-gain external whip antenna and flashed with WADAMesh OS for crisp, responsive standalone touchscreen control.</p>
-          <ul class="specs">
-            <li>External SMA whip antenna mod via internal pigtail</li>
-            <li>Flashed with WADAMesh OS for full touchscreen usability</li>
-            <li>Bench-tested &amp; ships via USPS Ground Advantage</li>
-          </ul>
-        </div>
-        <a class="btn" href="https://stripe.com" target="_blank" rel="noopener">Buy Modded T-Deck Plus via Stripe →</a>
-      </article>
+      </div>
     </div>
-
-    <div class="notice">
-      <strong>Hardware &amp; RF Safety Note:</strong> Never power on a LoRa transceiver without the included SMA whip antenna firmly attached. Units ship as experimental 915 MHz ISM open-source MeshCore / WADAMesh hardware kits.
+    <div class="card" style="margin-bottom:32px;">
+      <h2>Bench &amp; Field Gear We Actually Use (Affiliate Picks)</h2>
+      <p>Stocking your own electronics or LoRa workbench while we finish our 3D garage? Here are the exact parts on our bench right now:</p>
+      <div class="bom"><a class="pill-btn amber" href="https://link.amazon/B0iEkXX9e" target="_blank" rel="noopener">Amazon Gear (B0FSTD4BYM) ↗</a>
+<a class="pill-btn amber" href="https://link.amazon/B0c5uoIfq" target="_blank" rel="noopener">Amazon Gear (B0D29JTYPK) ↗</a>
+<a class="pill-btn amber" href="https://link.amazon/B0hqe42hu" target="_blank" rel="noopener">Amazon Gear (B0F1FHHH5X) ↗</a>
+<a class="pill-btn amber" href="https://link.amazon/B04qwLpdJ" target="_blank" rel="noopener">Amazon Gear (B0GFN7ZS6M) ↗</a>
+<a class="pill-btn amber" href="https://link.amazon/B0am0WZIp" target="_blank" rel="noopener">Amazon Gear (B09P52PRT1) ↗</a>
+<a class="pill-btn amber" href="https://link.amazon/B09ON4i9A" target="_blank" rel="noopener">Amazon Gear (B0GBSTPHKG) ↗</a>
+<a class="pill-btn amber" href="https://link.amazon/B0hlP7y9b" target="_blank" rel="noopener">Amazon Gear (B0FQJYDKQ7) ↗</a>
+<a class="pill-btn amber" href="https://link.amazon/B03gvOU1K" target="_blank" rel="noopener">Amazon Gear (B0FRS7H1FT) ↗</a>
+<a class="pill-btn amber" href="https://link.amazon/B06F97Ait" target="_blank" rel="noopener">Amazon Gear (B0FD9XZD4C) ↗</a>
+<a class="pill-btn amber" href="https://link.amazon/B00oMeEkJ" target="_blank" rel="noopener">Amazon Gear (B0FLX671VF) ↗</a>
+<a class="pill-btn amber" href="https://link.amazon/B0ak3CiZz" target="_blank" rel="noopener">Amazon Gear (B07BRS249H) ↗</a>
+<a class="pill-btn amber" href="https://link.amazon/B0aCynBZb" target="_blank" rel="noopener">Amazon Gear (B0BTWT7CZC) ↗</a>
+<a class="pill-btn amber" href="https://link.amazon/B0672Ff7G" target="_blank" rel="noopener">Amazon Gear (B0HMRL4Z4N) ↗</a>
+<a class="pill-btn amber" href="https://link.amazon/B03PQ4JK0" target="_blank" rel="noopener">Amazon Gear (B0BV8ZQ81F) ↗</a>
+<a class="pill-btn amber" href="https://link.amazon/B0asXSHcw" target="_blank" rel="noopener">Amazon Gear (B0GT94VGBC) ↗</a>
+<a class="pill-btn amber" href="https://link.amazon/B06byh9yd" target="_blank" rel="noopener">Amazon Gear (B01NBE2XIR) ↗</a>
+<a class="pill-btn amber" href="https://link.amazon/B02pY851z" target="_blank" rel="noopener">Amazon Gear (B00LP25V1A) ↗</a>
+<a class="pill-btn amber" href="https://link.amazon/B05tGydDJ" target="_blank" rel="noopener">Amazon Gear (B01HTC4XKY) ↗</a>
+<a class="pill-btn amber" href="https://link.amazon/B0ha7sxjQ" target="_blank" rel="noopener">Amazon Gear (B0C1G9GBRZ) ↗</a>
+<a class="pill-btn amber" href="https://link.amazon/B0csE66JA" target="_blank" rel="noopener">Amazon Gear (B01ERP6WL4) ↗</a>
+<a class="pill-btn amber" href="https://link.amazon/B03WYQ60z" target="_blank" rel="noopener">Bambu Combo Printer Multi Color Printing ↗</a>
+<a class="pill-btn amber" href="https://link.amazon/B0dk6KNFV" target="_blank" rel="noopener">Meta Quest 512GB Virtual Reality ↗</a>
+<a class="pill-btn amber" href="https://link.amazon/B09VLUucL" target="_blank" rel="noopener">Apple iPad Pro 11 inch Landscape ↗</a>
+<a class="pill-btn amber" href="https://link.amazon/B0en3ypx2" target="_blank" rel="noopener">DJI Transmission Transceiver Beginners Batteries ↗</a></div>
     </div>
-
     <footer>
       <span>© 2026 Toolbox Gadgets · Maryland, USA</span>
-      <span>Interactive 3D Retro-90s Garage Showcase Powered by Fox &amp; Flame Foundry — Coming Soon</span>
+      <span>As an Amazon Associate, I earn from qualifying purchases.</span>
     </footer>
   </div>
 </body>
